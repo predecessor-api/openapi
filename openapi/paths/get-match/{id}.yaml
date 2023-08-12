@@ -1,0 +1,22 @@
+get:
+  summary: Get Match details by ID
+  description: Get Match details by ID
+  operationId: getMatchById
+  parameters:
+    - name: id
+      in: path
+      description: The unique ID of the Match to get
+      required: true
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '../../components/schemas/Match.yaml'
+    '4xx':
+      description: Bad request, Unauthenticated, Unauthorized, Not Found, etc.
+    '5xx':
+      description: Network/Server error

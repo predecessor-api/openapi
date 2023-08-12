@@ -1,0 +1,15 @@
+type: object
+properties:
+  destructionPlayerID:
+    type: string
+  destructionHeroName:
+    type: string
+  structureEntityType:
+    type: string
+  location:
+    $ref: './Shared/Location.yaml'
+  teamID:
+    description: The team the structure belonged to - 0=Dawn, 1=Dusk
+    type: integer
+  gameTime:
+    type: integer

@@ -1,0 +1,18 @@
+type: object
+properties:
+  killedPlayerID:
+    type: string
+  killedHeroName:
+    type: string
+  killerPlayerID:
+    type: string
+  killerHeroName:
+    type: string
+  killerEntityType:
+    type: string
+  isFirstBlood:
+    type: boolean
+  location:
+    $ref: './Shared/Location.yaml'
+  gameTime:
+    type: integer

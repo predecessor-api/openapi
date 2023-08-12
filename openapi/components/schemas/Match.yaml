@@ -1,0 +1,52 @@
+type: object
+properties:
+  winningTeam:
+    description: The team that won the match - 0=Dawn,  1=Dusk
+    type: integer
+  gameDuration:
+    description: The duration of the Match in seconds
+    type: integer
+  gameMode:
+    description: The mode of the Match played
+    type: string
+    example: pvp_naeast
+  matchId:
+    description: The Unique ID string of the Match played
+    type: string
+    example: d2569e5482fa45e19db88752c072d9a4
+  region:
+    description: The region the Match was played in
+    type: string
+    example: us-east-1
+  startTime:
+    description: The timestamp of when the Match started
+    type: string
+    example: '2023-03-23 11:50:00'
+  endTime:
+    description: The timestamp of when the Match ended
+    type: string
+    example: '2023-03-23 12:31:25'
+  matchEndReason:
+    description: The reason for the Match ending
+    type: string
+    example: Core
+  playerData:
+    description: Details for each Player in the Match
+    type: array
+    items:
+      $ref: './Player/PlayerData.yaml'
+  heroKills:
+    description: Details on Hero Kill events for the Match
+    type: array
+    items:
+      $ref: './HeroKill.yaml'
+  structureDestructions:
+    description: Details on Structure Destruction events for the Match
+    type: array
+    items:
+      $ref: './StructureDestruction.yaml'
+  objectiveKills:
+    description: Details on Objective Kill events for the Match
+    type: array
+    items:
+      $ref: './ObjectiveKill.yaml'

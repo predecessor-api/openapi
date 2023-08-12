@@ -1,0 +1,8 @@
+type: object
+properties:
+  typeID:
+    type: integer
+  gameTime:
+    type: integer
+  location:
+    $ref: '../Shared/Location.yaml'

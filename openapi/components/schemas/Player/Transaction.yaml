@@ -1,0 +1,8 @@
+type: object
+properties:
+  itemID:
+    type: integer
+  transactionType:
+    type: integer
+  gameTime:
+    type: integer

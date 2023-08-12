@@ -1,0 +1,12 @@
+type: object
+properties:
+  kills:
+    type: integer
+  deaths:
+    type: integer
+  assists:
+    type: integer
+  largestKillingSpree:
+    type: integer
+  largestMultiKill:
+    type: integer

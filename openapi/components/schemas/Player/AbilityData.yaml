@@ -1,0 +1,6 @@
+type: object
+properties:
+  abilityInputTag:
+    type: string
+  gameTime:
+    type: integer

@@ -1,0 +1,14 @@
+type: object
+properties:
+  goldEarned:
+    type: integer
+  goldSpent:
+    type: integer
+  goldEarnedAtInterval:
+    type: array
+    items:
+      type: integer
+  transactions:
+    type: array
+    items:
+      $ref: './Transaction.yaml'

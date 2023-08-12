@@ -1,0 +1,12 @@
+type: object
+properties:
+  wardsPlaced:
+    type: integer
+  wardsDestroyed:
+    type: integer
+  wardDestructions:
+    type: array
+    $ref: Ward.yaml
+  wardPlacements:
+    type: array
+    $ref: Ward.yaml

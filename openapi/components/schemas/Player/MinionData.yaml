@@ -1,0 +1,12 @@
+type: object
+properties:
+  minionsKilled:
+    type: integer
+  laneMinionsKilled:
+    type: integer
+  neutralMinionsKilled:
+    type: integer
+  neutralMinionsTeamJungle:
+    type: integer
+  neutralMinionsEnemyJungle:
+    type: integer

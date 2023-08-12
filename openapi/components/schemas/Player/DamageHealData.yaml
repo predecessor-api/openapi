@@ -1,0 +1,52 @@
+type: object
+properties:
+  totalDamageDealt:
+    type: integer
+  physicalDamageDealt:
+    type: integer
+  magicalDamageDealt:
+    type: integer
+  trueDamageDealt:
+    type: integer
+  largestCriticalStrike:
+    type: integer
+  totalDamageDealtToHeroes:
+    type: integer
+  physicalDamageDealtToHeroes:
+    type: integer
+  magicalDamageDealtToHeroes:
+    type: integer
+  trueDamageDealtToHeroes:
+    type: integer
+  totalDamageDealtToStructures:
+    type: integer
+  totalDamageDealtToObjectives:
+    type: integer
+  totalDamageTaken:
+    type: integer
+  physicalDamageTaken:
+    type: integer
+  magicalDamageTaken:
+    type: integer
+  trueDamageTaken:
+    type: integer
+  totalDamageTakenFromHeroes:
+    type: integer
+  physicalDamageTakenFromHeroes:
+    type: integer
+  magicalDamageTakenFromHeroes:
+    type: integer
+  trueDamageTakenFromHeroes:
+    type: integer
+  totalDamageMitigated:
+    type: integer
+  totalHealingDone:
+    type: integer
+  itemHealingDone:
+    type: integer
+  crestHealingDone:
+    type: integer
+  utilityHealingDone:
+    type: integer
+  totalShieldingReceived:
+    type: integer

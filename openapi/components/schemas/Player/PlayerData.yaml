@@ -1,0 +1,43 @@
+type: object
+properties:
+  playerID:
+    description: The Unique ID of the Player
+    type: string
+    example: 7180bde77d334dca9b16d7367fcdce09
+  teamID:
+    description: The team this Player was on - 0=Dawn, 1=Dusk
+    type: integer
+  heroName:
+    description: The name of the Hero the Player was playing
+    type: string
+  roleName:
+    description: The role the Player was playing
+    type: string
+  playerName:
+    description: The name the Player was using when the Match was played
+    type: string
+  minionData:
+    description: Information about minions/camps killed by the Player
+    $ref: './MinionData.yaml'
+  combatData:
+    description: Information about combat-related data for the Player
+    $ref: './CombatData.yaml'
+  damageHealData:
+    description: Information about damage, healing, and other misc. data for the Player
+    $ref: './DamageHealData.yaml'
+  wardsData:
+    description: Wards placed/destroyed by the Player
+    $ref: './WardsData.yaml'
+  incomeData:
+    description: Income and Items purchased by the Player
+    $ref: './IncomeData.yaml'
+  abilityData:
+    description: A list of the Player's chosen Ability Level order
+    type: array
+    items:
+      $ref: './AbilityData.yaml'
+  inventoryData:
+    description: A list of the Player's final Item Inventory
+    type: array
+    items:
+      $ref: './InventoryData.yaml'

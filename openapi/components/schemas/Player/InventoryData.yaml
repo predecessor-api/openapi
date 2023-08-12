@@ -1,0 +1,6 @@
+type: object
+properties:
+  itemSlot:
+    type: integer
+  itemID:
+    type: integer

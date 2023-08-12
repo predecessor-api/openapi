@@ -1,0 +1,12 @@
+type: object
+properties:
+  killedEntityType:
+    type: string
+  killerPlayerID:
+    type: string
+  killerHeroName:
+    type: string
+  location:
+    $ref: './Shared/Location.yaml'
+  gameTime:
+    type: integer
