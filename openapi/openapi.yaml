@@ -1,14 +1,14 @@
 openapi: 3.0.2
 info:
   version: 1.0.0
-  title: predecessor-api.github.io
+  title: predecessor-api.github.io/openapi
   termsOfService: 'https://example.com/terms/'
   contact:
     email: contact@example.com
-    url: 'https://github.com/predecessor-api/predecessor-api.github.io'
+    url: 'https://github.com/predecessor-api/openapi'
   license:
     name: MIT
-    url: 'https://github.com/predecessor-api/predecessor-api.github.io/blob/main/LICENSE'
+    url: 'https://github.com/predecessor-api/openapi/blob/main/LICENSE'
   x-logo:
     url: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
   description: 'description.md'
@@ -19,17 +19,12 @@ paths:
     $ref: 'paths/get-match/{id}.yaml'
   '/get-matches-since/{epoch}':
     $ref: 'paths/get-matches-since/{epoch}.yaml'
+  '/get-matches-by-player/{player_id}':
+    $ref: paths/get-matches-by-player/{player_id}.yaml
 components:
   securitySchemes: {}
+  # NOTE: Predecessor API currently has no Auth requirements in place
   # securitySchemes:
-  #   main_auth:
-  #     type: oauth2
-  #     flows:
-  #       implicit:
-  #         authorizationUrl: 'http://example.com/api/oauth/dialog'
-  #         scopes:
-  #           'read:users': read users info
-  #           'write:users': modify or remove users
   #   api_key:
   #     type: apiKey
   #     in: header
